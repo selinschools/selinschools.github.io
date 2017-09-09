@@ -1,0 +1,84 @@
+@keyframes appear {
+	from {
+		margin-top: -100px;
+		opacity: 0;
+	}
+	to {
+		margin-top: 0;
+		opacity: 1;
+	}
+}
+
+* {
+	transition: all .2s ease-in-out;
+}
+
+body {
+	margin: 0;
+}
+
+.bg {
+	position: relative;
+}
+
+ .bg, .titles, .progress, .courses {
+	animation: appear 1s ease-in-out;
+}
+
+.titles {
+	position: absolute;
+	left: 110px;
+	top: 494px;
+	width: 170px;
+	height: 24px;
+	overflow: hidden;
+}
+
+.title-wrap img {
+	margin-bottom: 10px;
+}
+
+.left {
+	position: absolute;
+	left: 581px;
+	top: 475px;
+	opacity: 0;
+}
+
+.right {
+	position: absolute;
+	left: 623px;
+	top: 475px;
+	opacity: 0;
+}
+
+.left:hover, .right:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.progress {
+	position: absolute;
+	left: 98px;
+	top: 532px;
+	background-color: #ee1c25;
+	height: 1px;
+	width: 190px;
+}
+
+.courses {
+	position: absolute;
+	left: 798px;
+	top: 515px;
+	width: 370px;
+	height: 464px;
+	overflow: hidden;
+}
+
+.courses .wrap {
+	width: 1500px;
+}
+
+.courses .wrap img {
+	margin-right: 30px;
+}
